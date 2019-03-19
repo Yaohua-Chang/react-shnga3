@@ -123,6 +123,7 @@ class TodoForm extends Component {
           <input
             type="text"
             name="name"
+            defaultvale
             value={this.inputValue}
             onChange={this.handleInputChange}
           />
@@ -261,7 +262,6 @@ const TodoApp = observer(() => {
   const todoStore = new TodoStore();
   document.todoStore = todoStore
 
-  console.log('todoapp')
   return (
     <div>
       <TodoForm todoStore={todoStore} />
