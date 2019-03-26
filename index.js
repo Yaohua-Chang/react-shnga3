@@ -222,7 +222,7 @@ const TodoList = observer(({ todoStore }) => (
         type="button"
         onClick = {todoStore.removeAll}>
         
-        Remove all completed tasks
+        Remove completed todos
         
         </button>
       </tr>
